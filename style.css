@@ -1,0 +1,44 @@
+body{ font-family: 'Coiny', cursive;
+    max-width: 1600px;    
+    background-image: url(./img/bgr.png);
+    background-size: 100% 110%;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 900;
+
+}
+.ghost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.happy{
+    display: flex;
+    justify-content: center;
+}
+.anh{
+    width: 50%;
+    height: 50%;
+    width: 20%;
+}
+.ghost_1{    
+    animation: ghost 1s cubic-bezier(0.075, 0.82, 0.165, 1) alternate infinite;
+}
+.ghost_2{   
+    animation: ghost2 1s cubic-bezier(0.075, 0.82, 0.165, 1) alternate infinite;
+}
+.ghost_1, .ghost_2{
+    width: 200px;
+}
+@keyframes ghost{
+     to
+     {
+         transform: translateY(20%)
+     }
+}
+@keyframes ghost2{
+    to
+    {
+        transform: translateY(-20%)
+    }
+}
